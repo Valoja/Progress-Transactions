@@ -1,11 +1,14 @@
 How Do Progress Transactions Work
 
-Why this document has been written?
+Firstly - Why this document has been written: - for two reasons: 
+
+1 - to do something on GitHub that will not only allow me to learn more about GitHub, but also
+2 - display expertise I have gained about using the Progress development language(s); it may even prove useful to dedicated programmers/testers/analysts who want a reference to these areas...
+
 What is a Transaction - scope and locks?
 How to find Transaction scope?
 
 Further Reference
-
 
 The most critical parts of writing good programs, for business applications, is ensuring data is retrievable in a timely fashion and  making sure records are not tied up due to poor locking issues. Poor locking can lead to increased waiting times , poor performance the overall system and at worst dreaded deadlocks.
 
@@ -23,7 +26,7 @@ the transaction keyword
 
 release keyword
 
-excliusive-lock
+exclusive-lock
 
 
 
