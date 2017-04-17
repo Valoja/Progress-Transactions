@@ -1,0 +1,8 @@
+/* Checking on to see what the transaction scope is... 
+
+Use the COMPILE statement with the LISTING option.
+
+
+You can specify a file in the LISTING option... that will contain information at the bottom.
+It shows each block within the program and displays whether the block is a transaction or not.
+
