@@ -18,15 +18,21 @@ It is important for programmers to understand how record scope and locking is ha
 
 Transactions 
 
-...are used to maintain data integrity. 
+...are used to maintain data integrity. It's important to understand that a transaction is actually scoped to the
+outer most block where the Database is updated. For example, using FIND or FOR with EXCLUSIVE-LOCK causes the transaction scope to be raised to the nearest block with a transaction.
+
+Blocks with transaction properties include:
+FOR, REPEAT, PROCEDURE and any block that has the TRANSACTION keyword specified or any block where EXCLUSIVE-LOCK is used.
+
+Some statements that update the database are UPDATE, CREATE, ASSIGN and SET.
+
+If there is no block that qualifies then the transaction's scope is raised to the Procedure.
+
+Progress allows only one active transaction at a time, so the next transaction that you start in your procedure is 
+actually a subtransation. If you start a transaction in one procedure and it has not ended when you call a sub-procedure, 
+the new transactions in the sub-procedure will also be subtransactions.
 
 
-
-the transaction keyword
-
-release keyword
-
-exclusive-lock
-
+The programs in this repository are actually examples explaining how transactions work.
 
 
