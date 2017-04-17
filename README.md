@@ -16,3 +16,14 @@ It is important for programmers to understand how record scope and locking is ha
 Transactions 
 
 ...are used to maintain data integrity. 
+
+
+
+the transaction keyword
+
+release keyword
+
+excliusive-lock
+
+
+
