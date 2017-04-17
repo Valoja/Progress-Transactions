@@ -5,16 +5,13 @@ Firstly - Why this document has been written: - for two reasons:
 1 - to do something on GitHub that will not only allow me to learn more about GitHub, but also
 2 - display expertise I have gained about using the Progress development language(s); it may even prove useful to dedicated programmers/testers/analysts who want a reference to these areas...
 
-What is a Transaction - scope and locks?
-How to find Transaction scope?
 
-Further Reference
-
-The most critical parts of writing good programs, for business applications, is ensuring data is retrievable in a timely fashion and  making sure records are not tied up due to poor locking issues. Poor locking can lead to increased waiting times , poor performance the overall system and at worst dreaded deadlocks.
+The most critical parts of writing good programs, for business applications, is ensuring data is retrievable in a timely fashion and  making sure records are not tied up due to poor locking issues. 
+Locking issues can lead to increased waiting times, poor performance the overall system and at worst dreaded deadlocks.
 
 There are complexities that need to be understood and they quickly spiral further... for example if a system error occurs while you are processing orders for a customer, you'd want the system to undo all the order processing work you have done for that customer, as well as any changes you made to the customer record itself. This is the likely scenario... so it's important you know how reord locking and scoping works so that you know what will happen in these scenarios.  
 
-It is important for programmers to understand how record scope and locking is handled by the Progress Openedge database. So this document is to help all programmers using Progress 8, 9, OpenEdge, ABL etc to write more effective code.
+It is important for programmers to understand how record scope and locking is handled by the Progress Openedge database. So this document is to help all programmers using Progress 8, 9, 10, OpenEdge, ABL etc to write more effective code.
 
 Transactions 
 
@@ -31,7 +28,6 @@ If there is no block that qualifies then the transaction's scope is raised to th
 Progress allows only one active transaction at a time, so the next transaction that you start in your procedure is 
 actually a subtransation. If you start a transaction in one procedure and it has not ended when you call a sub-procedure, 
 the new transactions in the sub-procedure will also be subtransactions.
-
 
 The programs in this repository are actually examples explaining how transactions work.
 
