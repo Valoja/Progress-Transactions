@@ -79,5 +79,11 @@ The important thing to remember is that if a transaction has been activated befo
   END.
 
 
+/**** Tke KEY takeaway is.... it is possible to control the size of the transaction. You do that by using the TRANSACTION keyword 
+this way you can make it smaller or larger, to meet the demands of the system you are writing in...
+
+when records are being Updated... it's important to keep these factors in mind. 
+
+*****/
 
 */
