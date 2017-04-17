@@ -3,7 +3,7 @@ How Do Progress Transactions Work
 Firstly - Why this document has been written: - for two reasons: 
 
 1 - to do something on GitHub that will not only allow me to learn more about GitHub, but also
-2 - display expertise I have gained about using the Progress development language(s); it may even prove useful to dedicated programmers/testers/analysts who want to learn more about these areas
+2 - display expertise I have gained about using the Progress development language(s); it may even prove useful to dedicated programmers/testers/analysts who want a reference to these areas...
 
 What is a Transaction - scope and locks?
 How to find Transaction scope?
