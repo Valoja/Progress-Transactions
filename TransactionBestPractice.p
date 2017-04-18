@@ -51,11 +51,6 @@ It has to be sorted out at the source... the main program - UpdateCustOrders.p
 */
 
 
-TRANSACTION 4GL function
-PROMON (Transaction menu, or Lock Table)
-Virtual System Tables _Trans and _Lock
-
-
 /*  UpdateCustOrders.p - with Transaction handled more elegantly  */
 
  
