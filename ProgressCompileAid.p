@@ -94,9 +94,4 @@ Committed JTA     The transaction is in the commit process
 Trans ID
 Transaction ID of the lock.
    */
-   
-   
-/*   
-Virtual System Tables _Trans and _Lock
-*/
 
